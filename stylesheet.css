@@ -1,0 +1,165 @@
+
+/*
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    background: #222222;
+    color:#fff;
+    z-index: 1000;
+}
+
+.loader-content{
+	color: #fff;
+	text-align: center;
+}
+
+.element{
+	color: #fff;
+}
+*/
+/* Loaded */
+.loaded #loader-wrapper .loader-section.section-left {
+    -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(-100%);  /* IE 9 */
+    transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+}
+ 
+.loaded #loader-wrapper .loader-section.section-right {
+    -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(100%);  /* IE 9 */
+    transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+}
+
+/*.loaded #loader {
+    opacity: 0;
+}
+
+.loaded #loader-wrapper {
+    visibility: hidden;
+}
+
+.loaded #loader {
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-out; 
+            transition: all 0.5s ease-out;
+}
+
+.loaded #loader-wrapper .loader-section.section-right,
+.loaded #loader-wrapper .loader-section.section-left {
+ 
+    -webkit-transition: all 0.5s 0.5s ease-out; 
+            transition: all 0.5s 0.5s ease-out;
+}
+
+.loaded #loader-wrapper {
+        -webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+                transform: translateY(-100%);
+ 
+        -webkit-transition: all 0.5s 0.8s ease-out; 
+                transition: all 0.5s 0.8s ease-out;
+}
+
+.no-js #loader-wrapper {
+    display: none;
+}
+.no-js h1 {
+    color: #222222;
+}
+*/
+/*loader ends*/
+
+/*landing css starts*/
+
+section{
+    padding : 10%;
+}
+
+.card{
+    box-shadow: 0 25px 45px rgba(0,0,0,0.30), 0 15px 15px rgba(0,0,0,0.22);
+    max-width: 800px;
+    margin: auto; 
+    position: relative;
+}
+
+.black_container{
+   height: inherit;
+    background: #333;
+    width: 30%;
+    display: inline-block;
+    padding: 3%; 
+    font-family: 'Nunito', sans-serif;
+}
+
+.content_container{
+    display: inline-block;
+    width: 49%;
+    padding: 3%;
+}
+
+.circular{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 100px;
+    border: 13px solid #6e6e6e;
+    background: url('images/pranav_dp.png') no-repeat;  
+    background-position:50% 50%;
+    background-size: 170px 170px;
+    box-shadow:0 5px 30px rgba(0,0,0,0.30), 0 0px 15px rgba(0,0,0,0.18)
+
+}
+
+.small_bar{
+    padding:3px;
+    width: 30px;
+    margin: 0 auto; 
+    background: #e4e4e4;
+    border-radius: 20px;
+    margin-top: 35px; 
+}
+
+.name{
+    color:#fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin:30px auto 5px auto;
+    text-align: center;
+}
+.designation{
+    font-size: 10px;
+    margin: 0 auto;
+}
+
+
+/*landing css ends*/
+
+
+
+/*typed js starts*/
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/*typed js ends*/

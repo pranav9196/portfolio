@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pranav Chaudhary | Home</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+
+	<meta name="robots" content="index, follow">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+	<link rel="stylesheet" href="stylesheet.css" />
+
+	<meta property="fb:page_id" content="">
+	<meta property="og:title" content="">
+	<meta property="og:image" content="">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:type" content="website">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:url" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:site" content="">
+</head>
+<body>
+	<!-- loader starts -->
+	<div id="loader-wrapper">
+		<div id="loader">
+			<div class="loader-section">
+				<div class="loader-content">
+					<p>Pranav Chaudhary</p>
+					Loading<p class="element"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- loader ends -->
+
+	<section class="landing-wrapper">
+		<div class="card-wrapper cardLanding">
+			
+		</div>
+	</section>
+	<!-- <img src="loader.jpg"> -->
+
+	<!-- jquery -->	
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="typed.js"></script>
+<script>
+  $(function(){
+      $(".element").typed({
+        strings: ["Portfolio", "About Me", "Contact", "Homepage", "data from satellites"],
+        typeSpeed: 0
+      });
+  });
+</script>
+
+	<!-- loader script starts -->
+	<script type="text/javascript">
+		$('body').toggleClass('loaded');
+		// faking timer for load screen
+		$(document).ready(function() {
+			setTimeout(function(){
+				$('body').addClass('loaded');
+				$('h1').css('color','#222222');
+			}, 5000);
+		});
+	</script>
+
+	<!-- loader script ends -->
+
+	
+</body>
+</html>
