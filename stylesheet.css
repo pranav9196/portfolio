@@ -73,8 +73,8 @@
 
 /*landing css starts*/
 
-section{
-    padding : 10%;
+.landing{
+    padding : 7% 10%;
 }
 
 .card>*{
@@ -198,6 +198,7 @@ section{
     border: 1px solid #e4e4e4;
     position: relative;
     top:-30px;
+    margin-left: 10px;
 }
 
 .qr_code>img{
