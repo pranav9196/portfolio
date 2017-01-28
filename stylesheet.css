@@ -25,7 +25,7 @@
     -ms-transform: translateX(-100%);  /* IE 9 */
     transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
 }
- 
+
 .loaded #loader-wrapper .loader-section.section-right {
     -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: translateX(100%);  /* IE 9 */
@@ -77,29 +77,46 @@ section{
     padding : 10%;
 }
 
+.card>*{
+  box-sizing: border-box;
+}
+
 .card{
-    box-shadow: 0 25px 45px rgba(0,0,0,0.30), 0 15px 15px rgba(0,0,0,0.22);
+    box-shadow: 0 10px 45px rgba(0,0,0,0.30), 0 15px 15px rgba(0,0,0,0.22);
     max-width: 800px;
     margin: auto; 
     position: relative;
 }
 
 .black_container{
-   height: inherit;
-    background: #333;
-    width: 30%;
-    display: inline-block;
+    position: absolute;
+    height:100%;
+    width: 35%;
+    background: #333;   
     padding: 3%; 
     font-family: 'Nunito', sans-serif;
 }
+.card_content{
+    margin-top: 60px;
+}
+
+.card_content>p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #727272;
+}
+
+.card_content>p>span{
+    font-weight: 800;
+    font-size: 18px;
+}
 
 .content_container{
-    display: inline-block;
-    width: 58%;
     padding: 3%;
-    position: absolute;
-    top:0;
-    bottom: 0;
+    width:65%;
+    left:35%;
+    font-family: 'Nunito', sans-serif;
+    position: relative;
 }
 
 .circular{
@@ -120,7 +137,6 @@ section{
     width: 30px;
     margin: 0 auto; 
     background: #e4e4e4;
-    border-radius: 20px;
     margin-top: 35px; 
 }
 
@@ -131,7 +147,9 @@ section{
     letter-spacing: 5px;
     margin:30px auto 5px auto;
     text-align: center;
+    font-weight: 800;
 }
+
 .designation{
     font-size: 10px;
     margin: 0 auto;
@@ -139,6 +157,11 @@ section{
 
 .qrcode_container{
     float: right;
+}
+
+.qr_container{
+    overflow: auto;
+    width: 100%;
 }
 
 .qr_text{
@@ -165,7 +188,7 @@ section{
 }
 
 .bar{
-        position: absolute;
+    position: absolute;
     top: -80px;
 }
 
@@ -173,7 +196,25 @@ section{
     display: inline-block;
     height: inherit;
     border: 1px solid #e4e4e4;
-    padding: 5px;
+    position: relative;
+    top:-30px;
+}
+
+.qr_code>img{
+    height: 90px;    
+}
+
+
+.resume_button{    
+    width: 150px;
+    letter-spacing: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    background: #333;
+    padding: 5px 10px;
 }
 
 /*landing css ends*/
@@ -204,3 +245,6 @@ section{
 }
 
 /*typed js ends*/
+
+
+
