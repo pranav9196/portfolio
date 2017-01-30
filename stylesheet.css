@@ -1,4 +1,7 @@
-
+body{
+    font-family: 'Orbitron', sans-serif;
+    transition: all 1s ease;
+}
 /*
 #loader-wrapper .loader-section {
     position: fixed;
@@ -11,12 +14,12 @@
 }
 
 .loader-content{
-	color: #fff;
-	text-align: center;
+    color: #fff;
+    text-align: center;
 }
 
 .element{
-	color: #fff;
+    color: #fff;
 }
 */
 /* Loaded */
@@ -88,39 +91,79 @@
     position: relative;
 }
 
-.black_container{
+.transparent_image{
+    background-image: url(images/pranav_dp.png);
+    height: 100%;
     position: absolute;
-    height:100%;
-    width: 35%;
-    background: #333;   
-    padding: 3%; 
-    font-family: 'Nunito', sans-serif;
-}
-.card_content{
-    margin-top: 60px;
+    width: 100%;
+    top: -100;
+    left: -150;
+    z-index: 9;
+    filter: blur(1.5px);
+    opacity: 0.4;
+    transform: scale(2);
 }
 
+
+
+.black_container{
+    position: absolute;
+    overflow: hidden;
+    height:100%;
+    width: 40%;
+    background: #272727;
+    padding: 3%;
+    font-family: 'Orbitron', sans-serif;
+    font-stretch: ultra-expanded;
+    -webkit-box-shadow: 10px 0 5px -2px #888;
+    box-shadow: 6px 0 10px -3px #727272;
+}
+.card_content{
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-family: 'Square721 BT',sans-serif;
+    /* letter-spacing: 2px; */
+}
+
+
 .card_content>p{
-    font-size: 14px;
+    font-size: 10px;
+    letter-spacing: 2;
     font-weight: 400;
-    color: #727272;
+    color: #a5a5a5;
+    -webkit-text-stroke: 0.6px #a5a5a5;
+    line-height: 10px;
 }
 
 .card_content>p>span{
-    font-weight: 800;
-    font-size: 18px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #555;
+    -webkit-text-stroke: 0;
+    letter-spacing: 1.5;
 }
 
+.hello{
+    text-transform: uppercase;
+    font-weight: 600 !important;
+    letter-spacing: 8px !important;
+    -webkit-text-stroke: 0 !important;
+    font-size: 1.2em !important;
+    margin-bottom: 22px;
+}
+
+
 .content_container{
-    padding: 3%;
-    width:65%;
-    left:35%;
-    font-family: 'Nunito', sans-serif;
+    padding: 3% 4% 1% 6%;
+    width:60%;
+    left:40%;
+    font-family: 'Orbitron', sans-serif;
     position: relative;
 }
 
 .circular{
     width: 150px;
+    position: relative;
     height: 150px;
     margin: 0 auto;
     border-radius: 100px;
@@ -128,31 +171,38 @@
     background: url('images/pranav_dp.png') no-repeat;  
     background-position:50% 50%;
     background-size: 170px 170px;
-    box-shadow:0 5px 30px rgba(0,0,0,0.30), 0 0px 15px rgba(0,0,0,0.18)
+    box-shadow:0 5px 30px rgba(0,0,0,0.30), 0 0px 15px rgba(0,0,0,0.18);
+    z-index: 99;
 
 }
 
 .small_bar{
-    padding:3px;
+    padding: 3;
+    position: relative;
     width: 30px;
-    margin: 0 auto; 
+    margin: 0 auto;
+    z-index: 99;
     background: #e4e4e4;
-    margin-top: 35px; 
+    margin-top: 35px;
 }
 
 .name{
+    position: relative;
     color:#fff;
     font-size: 14px;
+    z-index: 99;
     text-transform: uppercase;
     letter-spacing: 5px;
     margin:30px auto 5px auto;
     text-align: center;
-    font-weight: 800;
+    font-weight: 400;
 }
 
 .designation{
     font-size: 10px;
     margin: 0 auto;
+    z-index: 99;
+    letter-spacing: 6;
 }
 
 .qrcode_container{
@@ -167,60 +217,156 @@
 .qr_text{
     display: inline-block;
     list-style-type: none;
+    text-align: right;
 }
 
 .qr_text>li{
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 2.5px;
-    color: #9a9a9a;
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #a5a5a5;
 }
+
 
 .bars{
     display: inline-block;
     position: relative;
-    top: 10px;
+    top: 16px;
 }
 
 .bars .small_bar{
     width: 15px;
     background: #777;
+    padding: 2px;
 }
 
-.bar{
+.bar_upper{
     position: absolute;
-    top: -80px;
+    top: -88px;
 }
 
 .qr_code{
     display: inline-block;
     height: inherit;
-    border: 1px solid #e4e4e4;
     position: relative;
-    top:-30px;
+    top: -26px;
     margin-left: 10px;
 }
 
 .qr_code>img{
-    height: 90px;    
+    height: 105px;
 }
 
 
-.resume_button{    
+
+.resume_button{
     width: 150px;
-    letter-spacing: 1;
+    letter-spacing: 4px;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 14px;
     color: #fff;
     text-align: center;
-    background: #333;
-    padding: 5px 10px;
+    background: #272727;
+    font-family: 'Orbitron';
+    padding: 8px 12px;
+    margin-top: 35px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.60);
+}
+
+.resume_button:hover{
+    cursor: pointer;
+    position: relative;    
+    /*transition: all 0.1s ease;*/
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.60);
+    top:-1px;
+}
+
+.card_footer>p{
+    letter-spacing: 2.5px;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 35px;
+    color: #b5b5b5;
+    font-size: 0.65em;
+    text-transform: uppercase;
 }
 
 /*landing css ends*/
 
 
+
+
+
+
+
+
+
+
+/*navigation css*/
+
+.nav, .nav>p{
+    position: fixed;
+}
+.right_nav{
+    right: 40px;
+    display: table;
+    height: 100vh;
+}
+
+.right_nav>ul{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.right_nav>ul>li{
+    list-style-type: none;
+    display: block !important;
+    margin-bottom: 30px;
+}
+
+.right_nav>ul>li:hover{
+    text-shadow: 0px 0px 2px #727272;
+    cursor: pointer;
+}
+
+
+.left_nav{
+    height: 100vh;
+    left: -10px;
+}
+
+.left_nav .nav_upper:hover, .left_nav .nav_lower:hover{
+    text-shadow: 0px 0px 2px #727272;
+    cursor: pointer;
+}
+
+.left_nav .nav_upper{
+    top: 55px;
+    -webkit-transform: rotateZ(90deg); /* Safari */
+    transform: rotateZ(90deg); /* Standard syntax */
+}
+
+.nav_upper>img{
+ -webkit-transform: rotateZ(90deg); /* Safari */
+ transform: rotateZ(90deg); /* Standard syntax */
+ margin-right:25px;
+}
+
+.nav_lower>img{
+ -webkit-transform: rotateZ(180deg); /* Safari */
+ transform: rotateZ(270deg); /* Standard syntax */
+ margin-left:25px;
+}
+
+.left_nav .nav_lower{
+    bottom: 35px;
+    -webkit-transform: rotateZ(90deg); /* Safari */
+    transform: rotateZ(90deg); /* Standard syntax */
+    s;
+}
+
+/*navigation css*/
 
 /*typed js starts*/
 .typed-cursor{
