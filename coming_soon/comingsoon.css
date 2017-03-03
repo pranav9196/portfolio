@@ -1,0 +1,230 @@
+body{
+	background-color: #333;
+	color: #706c6b;
+	font-family: 'Square721 BT', sans-serif;
+}
+
+
+.content_container{
+	position: absolute;
+	width: 100%;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.content_container>p, .content_container>div{
+	text-transform: uppercase;
+	letter-spacing: 15px;
+	-webkit-text-stroke: 1.5px #706c6b;
+	-webkit-transform:scale(1,0.9); /* Safari and Chrome */
+	-moz-transform:scale(1,0.9); /* Firefox */
+	-ms-transform:scale(1,0.9); /* IE 9 */
+	-o-transform:scale(1,0.9); /* Opera */
+	transform:scale(1,0.9);
+}
+
+.progress_bar{
+	margin: 0 auto;
+	width: 65%;
+	padding: 1px;
+	background: #727272;
+	-webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+	-moz-animation: neon1 1.5s ease-in-out infinite alternate;
+	animation: neon1 1.5s ease-in-out infinite alternate;
+	-webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+	-moz-animation: neon1 1.5s ease-in-out infinite alternate;
+	animation: neon1 1.5s ease-in-out infinite alternate;	
+}
+
+.name{
+	letter-spacing: 20px !important;
+	margin-bottom: 50px;
+	font-size: 2.5em;
+}
+
+.loading{
+	font-size: 1em;
+	color: #aba7a7;
+	-webkit-text-stroke: 0.8px #aba7a7 !important;	
+	letter-spacing: 10px !important;
+	font-size:1.6em;
+	margin-top: 4%;
+	margin-bottom: 2.5%;
+}
+
+.tagline{
+	font-size: 1.2em !important;
+	-webkit-text-stroke: 1px #706c6b !important;
+}
+
+
+
+/*hover links*/
+
+nav a {
+	position: relative;
+	display: inline-block;
+	margin: 15px 25px;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.35em;
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+/* Effect 11: text fill based on Lea Verou's animation http://dabblet.com/gist/6046779 */
+.cl-effect-11 a {
+	padding: 10px 0;
+	border-top: 2px solid #727272;
+	color: #727272;
+	text-shadow: none;
+	letter-spacing: 3px;
+} 
+
+.cl-effect-11 a::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	padding: 10px 0;
+	max-width: 0;
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	content: attr(data-hover);
+	-webkit-transition: max-width 0.5s;
+	-moz-transition: max-width 0.5s;
+	transition: max-width 0.5s;
+}
+
+.cl-effect-11 a:hover::before,
+.cl-effect-11 a:focus::before {
+	max-width: 100%;
+}
+
+nav>a>i:hover{
+	-webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+	-moz-animation: neon2 1.5s ease-in-out infinite alternate;
+	animation: neon2 1.5s ease-in-out infinite alternate;
+	-webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+	-moz-animation: neon2 1.5s ease-in-out infinite alternate;
+	animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+.behance{
+	-webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+	-moz-animation: neon2 1.5s ease-in-out infinite alternate;
+	animation: neon2 1.5s ease-in-out infinite alternate;
+	-webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+	-moz-animation: neon2 1.5s ease-in-out infinite alternate;
+	animation: neon2 1.5s ease-in-out infinite alternate;	
+}
+
+.behance:hover{
+	color:#fff;
+}
+
+footer{
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	font-size: 0.45em;
+}
+
+
+nav a i{
+	position: absolute;
+	top: -30px;
+	left: 35px;
+}
+
+.pos_fix{
+	left:25px;
+}
+
+.element{
+	font-size: 1em !important;
+}
+
+@-webkit-keyframes neon1 {
+	from {
+		box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffffff, 0 0 70px #ffffff, 0 0 80px #ffffff, 0 0 100px #ffffff, 0 0 150px #ffffff;
+	}
+	to {
+		box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffffff, 0 0 35px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 75px #ffffff;
+	}
+}
+
+@-webkit-keyframes neon2 {
+	from {
+		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffffff, 0 0 70px #ffffff, 0 0 80px #ffffff, 0 0 100px #ffffff, 0 0 150px #ffffff;
+	}
+	to {
+		text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffffff, 0 0 35px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 75px #ffffff;
+	}
+}
+
+
+
+@media only screen and (max-device-width:480px){
+	/* styles for mobile browsers smaller than 480px; (iPhone) */
+	.name{
+		font-size: 4em;
+		margin-bottom: 80px;
+		letter-spacing: 30px !important;
+	}
+
+	.loading{
+		margin-top: 90px;
+		font-size: 3em;
+		letter-spacing: 25px !important;
+		line-height: 90px;
+	}
+
+	.tagline{
+		font-size: 2.5em !important;
+		letter-spacing: 25px;
+		line-height: 65px;
+	}
+
+	.progress_bar{
+		width: 80%;
+	}
+
+	nav a i{
+		top: -80px;
+		left: 60px;
+	}
+
+	.pos_fix {
+		left: 50px;
+	}
+
+	footer{
+		font-size: 1em;
+	}
+
+	.content_container{
+		top:50%;
+	}
+}
+@media only screen and (device-width:768px){
+	/* default iPad screens */
+}
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+	/* For portrait layouts only */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+      /* For landscape layouts only */
