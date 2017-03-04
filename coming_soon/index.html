@@ -7,6 +7,88 @@
 
 </head>
 <body>
+	<div class="quotes" onload="show()">
+		<blockquote>
+			<p>“Color is everything, Black and White is MORE.”</p>
+		</blockquote>
+
+		<blockquote>
+			<p>“Less is more. More is less.”</p>
+		</blockquote>
+
+		<blockquote>
+			<p>“In the distance between BLACK and WHITE lies the color of the SOUL”</p>
+		</blockquote>
+
+		<blockquote>
+			<p>“Black is not sad, Black is poetic. <br> How do you imagine a poet?In a bright yellow jacket?<br> Probably not.”</p>
+		</blockquote>
+
+		<blockquote>
+			<p>“Things aren't always #000 and #fff, sometimes there are patches of #808080”</p>
+		</blockquote>
+
+		<blockquote>
+			<p>“Yesterday is History, Tomorrow's a Mystery but Today is a gift, Maybe thats why they call it as PRESENT"”</p>
+		</blockquote>
+
+		<blockquote>
+			<p>“Shoot for the Stars, you'll land on the MOON for sure!”</p>
+		</blockquote>
+
+		<blockquote>
+			<p>“Eat.Sleep.Design.Repeat.”</p>
+		</blockquote>
+
+		<blockquote>
+			<p>“Good ART is a talent. Good DESIGN is a SKILL.”</p>
+		</blockquote>
+
+		<blockquote>
+			<p>“A man is known by the Design he keeps.”</p>
+		</blockquote>
+
+		<blockquote>
+			<p>“Valhar Morghulis. Valhar Dohaeris.”</p>
+		</blockquote>
+
+		<blockquote>
+			<p>“Color is everything, Black and White is MORE.”</p>
+		</blockquote>
+
+		<blockquote>
+			<p>“Can a man be brave if he's afraid? Perhaps, that is the only time a man can be brave.”</p>
+		</blockquote>
+
+		<blockquote>
+			<p>“Designers don't retire, We DIE.”</p>
+		</blockquote>
+
+		<blockquote>
+			<p>“There are three responses to apiece of Design. Yes, No and WOW! and WOW! is the one to aim for.”</p>
+		</blockquote>
+
+		<blockquote>
+			<p>“Good Design goes to heaven, Bad Design goes everywhere.”</p>
+		</blockquote>
+
+		<blockquote>
+			<p>“When you've exhausted all the possibilities. Remember this... you havent!”</p>
+		</blockquote>
+
+		<blockquote>
+			<p>“Good Designers Design what they WOULD design BEFORE they start designing it.”</p>
+		</blockquote>
+
+		<blockquote>
+			<p>“Every artist was once an AMATEUR.”</p>
+		</blockquote>
+
+		<blockquote>
+			<p>“Are you ready for something Darker?”</p>
+		</blockquote>
+	</div><!-- .quotes -->
+
 	<div class="content_container">		
 		<p class="name">pranav chaudhary</p>
 		<p class="progress_bar"></p>
@@ -32,10 +114,27 @@
 		$(function(){
 			$(".element").typed({
 				strings: ["Graphic", "UI/UX", "An engineer turned"],
-				typeSpeed: 50
+				typeSpeed: 100
 			});
 		});
 	</script>
 	<script src="https://use.fontawesome.com/37c7ee3b04.js"></script>
+
+
+	<!-- script for quote of the day -->
+<script type="text/javascript" src="jquery.quovolver.js"></script>
+
+	<script type="text/javascript">
+$(document).ready(function () {
+    $('.quotes').css('display', 'block');
+});
+
+		$(document).ready(function() {
+  // Call Quovolver on the '.quotes' object
+  $('.quotes').quovolver({
+  	 autoPlaySpeed : 5000
+  });
+});
+</script>
 </body>
 </html>
