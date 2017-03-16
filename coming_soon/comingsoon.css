@@ -1,7 +1,11 @@
 body{
 	background-color: #333;
-	color: #706c6b;
-	font-family: 'Square721 BT', sans-serif;
+	color: #727272;
+	font-family: 'Square721 BT', sans-serif;	
+}
+
+*{
+	font-size: 16px;
 }
 
 
@@ -17,7 +21,8 @@ body{
 .content_container>p, .content_container>div{
 	text-transform: uppercase;
 	letter-spacing: 15px;
-	-webkit-text-stroke: 1.5px #706c6b;
+	-webkit-text-stroke: 1.5px #8c8c8c;
+	color: #8c8c8c;
 	-webkit-transform:scale(1,0.9); /* Safari and Chrome */
 	-moz-transform:scale(1,0.9); /* Firefox */
 	-ms-transform:scale(1,0.9); /* IE 9 */
@@ -29,7 +34,7 @@ body{
 	margin: 0 auto;
 	width: 65%;
 	padding: 1px;
-	background: #727272;
+	background: #525252;
 	-webkit-animation: neon1 1.5s ease-in-out infinite alternate;
 	-moz-animation: neon1 1.5s ease-in-out infinite alternate;
 	animation: neon1 1.5s ease-in-out infinite alternate;
@@ -46,8 +51,8 @@ body{
 
 .loading{
 	font-size: 1em;
-	color: #aba7a7;
-	-webkit-text-stroke: 0.8px #aba7a7 !important;	
+	color: #dadada !important;
+	-webkit-text-stroke: 0.8px #dadada !important;
 	letter-spacing: 10px !important;
 	font-size:1.6em;
 	margin-top: 4%;
@@ -56,9 +61,22 @@ body{
 
 .tagline{
 	font-size: 1.2em !important;
-	-webkit-text-stroke: 1px #706c6b !important;
+	-webkit-text-stroke: 1px #8c8c8c !important;
 }
 
+
+/*parallax*/
+.mouse-bg {
+left: 0;
+right: 0;
+bottom: 0;
+top: 0;
+position: fixed;
+}
+
+#background{
+	background-image: url('grass3.png');
+}
 
 
 /*hover links*/
@@ -117,6 +135,7 @@ nav>a>i:hover{
 	-webkit-animation: neon2 1.5s ease-in-out infinite alternate;
 	-moz-animation: neon2 1.5s ease-in-out infinite alternate;
 	animation: neon2 1.5s ease-in-out infinite alternate;
+	color: #333;
 }
 
 .behance{
@@ -129,7 +148,7 @@ nav>a>i:hover{
 }
 
 .behance:hover{
-	color:#fff;
+	color:#333;
 }
 
 footer{
@@ -141,6 +160,14 @@ footer{
 	font-size: 0.45em;
 }
 
+footer>p{
+	text-align: center;
+	color: #b4b4b4;
+	text-transform: uppercase;
+	font-size: 1.6em;
+	letter-spacing: 5px;
+	margin-bottom: 3%;
+}
 
 nav a i{
 	position: absolute;
@@ -165,6 +192,11 @@ nav a i{
 	color: #696969;
 	display: none;
 }
+
+    .typed-cursor{
+    	font-size: 1.2em;
+    }
+
 
 @-webkit-keyframes neon1 {
 	from {
@@ -232,6 +264,10 @@ nav a i{
 		margin-top: 10%;
     font-size: 2.5em;
 	}
+
+	footer>p{
+		margin-bottom: 15%;
+	}
 }
 @media only screen and (device-width:768px){
 	/* default iPad screens */
@@ -242,4 +278,4 @@ nav a i{
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-      /* For landscape layouts only */
+      /* For landscape layouts only */}

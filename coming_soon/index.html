@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Pranav Chaudhary</title>
+<head>	
+	<meta charset="utf-8">
+	<meta description="">
+	<title>Pranav Chaudhary | Coming Soon</title>
+	<link href="parallax.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="comingsoon.css">
-	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
 </head>
 <body>
+	<div id="background" class="mouse-bg"></div>
 	<div class="quotes" onload="show()">
 		<blockquote>
-			<p>“Color is everything, Black and White is MORE.”</p>
+			<p><span>“</span>Color is everything, Black and White is MORE.”</p>
 		</blockquote>
 
 		<blockquote>
@@ -21,7 +23,11 @@
 		</blockquote>
 
 		<blockquote>
-			<p>“Black is not sad, Black is poetic. <br> How do you imagine a poet?In a bright yellow jacket?<br> Probably not.”</p>
+			<p>“Black is not sad, Black is poetic. <br> How do you imagine a poet??? In a bright yellow jacket?<br> Probably not...”</p>
+		</blockquote>
+
+		<blockquote>
+			<p>“The theme of the website is dedicated to my best friend NEHA YADAV...keep smiling, inspiring and creating awesome things wherever you are...”</p>
 		</blockquote>
 
 		<blockquote>
@@ -30,10 +36,6 @@
 
 		<blockquote>
 			<p>“Yesterday is History, Tomorrow's a Mystery but Today is a gift, Maybe thats why they call it as PRESENT"”</p>
-		</blockquote>
-
-		<blockquote>
-			<p>“Shoot for the Stars, you'll land on the MOON for sure!”</p>
 		</blockquote>
 
 		<blockquote>
@@ -65,7 +67,7 @@
 		</blockquote>
 
 		<blockquote>
-			<p>“There are three responses to apiece of Design. Yes, No and WOW! and WOW! is the one to aim for.”</p>
+			<p>“There are three responses to a piece of Design. YES, NO and WOW! and WOW! is the one to aim for.”</p>
 		</blockquote>
 
 		<blockquote>
@@ -77,7 +79,7 @@
 		</blockquote>
 
 		<blockquote>
-			<p>“Good Designers Design what they WOULD design BEFORE they start designing it.”</p>
+			<p>“Good Designers DESIGN what they WOULD design BEFORE they start designing it.”</p>
 		</blockquote>
 
 		<blockquote>
@@ -85,11 +87,11 @@
 		</blockquote>
 
 		<blockquote>
-			<p>“Are you ready for something Darker?”</p>
+			<p>“Are you ready for something DARKER?”</p>
 		</blockquote>
 	</div><!-- .quotes -->
 
-	<div class="content_container">		
+	<div class="content_container">	
 		<p class="name">pranav chaudhary</p>
 		<p class="progress_bar"></p>
 		<p class="loading">Website coming soon</p>
@@ -98,6 +100,7 @@
 
 
 	<footer>
+		<p> find me on</p>
 		<nav class="cl-effect-11">
 			<a href="https://www.facebook.com/pranav.chaudhary.750"  target="_blank" data-hover="Facebook"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i>Facebook</a>
 			<a href="https://www.instagram.com/pranav_stormborn/?hl=en" target="_blank"  data-hover="Instagram"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i>Instagram</a>
@@ -105,36 +108,47 @@
 			<a href="https://www.linkedin.com/in/pranav-chaudhary-5a1493b6/" target="_blank"  data-hover="Linkedin"><i class="pos_fix fa fa-linkedin fa-2x" aria-hidden="true"></i>Linkedin</a>
 			<a href="https://in.pinterest.com/pranav9196/" target="_blank" data-hover="Pinterest"><i class="fa fa-pinterest fa-2x" aria-hidden="true"></i>Pinterest</a>
 		</nav>
-	</footer><!-- /container -->
+	</footer>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="js/typed.js"></script>
-	
+	<script src="js/typed.js"></script>	
 	<script>
 		$(function(){
 			$(".element").typed({
 				strings: ["Graphic", "UI/UX", "An engineer turned"],
-				typeSpeed: 100
+				typeSpeed: 100,
+				loop: '',
+				backDelay: 2000,
+				startDelay: 1000,
 			});
 		});
 	</script>
-	<script src="https://use.fontawesome.com/37c7ee3b04.js"></script>
 
+	<script src="https://use.fontawesome.com/37c7ee3b04.js"></script>	
 
 	<!-- script for quote of the day -->
-<script type="text/javascript" src="js/jquery.quovolver.js"></script>
+	<script type="text/javascript" src="js/jquery.quovolver.js"></script>
 
 	<script type="text/javascript">
-$(document).ready(function () {
-    $('.quotes').css('display', 'block');
-});
+		$(document).ready(function () {
+			$('.quotes').css('display', 'block');
+		});
 
 		$(document).ready(function() {
-  // Call Quovolver on the '.quotes' object
-  $('.quotes').quovolver({
-  	 autoPlaySpeed : 5000
-  });
-});
-</script>
+  		// Call Quovolver on the '.quotes' object
+  		$('.quotes').quovolver({
+  			autoPlaySpeed : 7000
+  		});
+  	});
+  </script>
+
+  <!-- parallax script -->
+  <script src="parallax.js"></script>
+  <script>
+  	$(document).ready(function() {
+  		$('#background').mouseParallax({ moveFactor: 2 });	
+
+  	});
+  </script>
 </body>
 </html>
