@@ -21,7 +21,7 @@ body{
 .content_container>p, .content_container>div{
 	text-transform: uppercase;
 	letter-spacing: 15px;
-	-webkit-text-stroke: 1.5px #8c8c8c;
+	-webkit-text-stroke: 0.8px #8c8c8c;
 	color: #8c8c8c;
 	-webkit-transform:scale(1,0.9); /* Safari and Chrome */
 	-moz-transform:scale(1,0.9); /* Firefox */
@@ -52,7 +52,7 @@ body{
 .loading{
 	font-size: 1em;
 	color: #dadada !important;
-	-webkit-text-stroke: 0.8px #dadada !important;
+	-webkit-text-stroke: 0.2px #dadada !important;
 	letter-spacing: 10px !important;
 	font-size:1.6em;
 	margin-top: 4%;
@@ -61,7 +61,7 @@ body{
 
 .tagline{
 	font-size: 1.2em !important;
-	-webkit-text-stroke: 1px #8c8c8c !important;
+	-webkit-text-stroke: 0.8px #8c8c8c !important;
 }
 
 
@@ -92,7 +92,7 @@ nav a {
 	letter-spacing: 1px;
 	font-weight: 400;
 	text-shadow: 0 0 1px rgba(255,255,255,0.3);
-	font-size: 1.35em;
+	font-size: 0.6em;
 }
 
 nav a:hover,
@@ -165,7 +165,7 @@ footer>p{
 	color: #b4b4b4;
 	text-transform: uppercase;
 	font-size: 1.6em;
-	letter-spacing: 5px;
+	letter-spacing: 6px;
 	margin-bottom: 3%;
 }
 
@@ -173,6 +173,7 @@ nav a i{
 	position: absolute;
 	top: -30px;
 	left: 35px;
+	font-size: em !important;
 }
 
 .pos_fix{
@@ -219,54 +220,74 @@ nav a i{
 
 
 @media only screen and (max-device-width:480px){
+	*{
+	font-size: 16px;
+}
+
 	/* styles for mobile browsers smaller than 480px; (iPhone) */
 	.name{
-		font-size: 4em;
-		margin-bottom: 80px;
-		letter-spacing: 30px !important;
+		font-size: 1.5em;
+		margin-bottom: 30px;
+		letter-spacing: 13px !important;
 	}
 
 	.loading{
-		margin-top: 90px;
-		font-size: 3em;
-		letter-spacing: 25px !important;
-		line-height: 90px;
+		margin-top: 35px;
+		font-size: 1.15em;
+		letter-spacing: 10px !important;
+		line-height: 30px;
 	}
 
 	.tagline{
-		font-size: 2.5em !important;
-		letter-spacing: 25px;
-		line-height: 65px;
+		font-size: 0.9em !important;
+		letter-spacing: 8px !important;
+		line-height: 30px;
 	}
 
 	.progress_bar{
 		width: 80%;
 	}
 
+	nav a{
+		font-size: 0.5em;
+		margin: 10px 0px;
+	}
+
 	nav a i{
-		top: -80px;
-		left: 60px;
+		/* top: -80px; */
+		/* left: 60px; */
+		font-size: 2.4em !important;
 	}
 
 	.pos_fix {
-		left: 50px;
+		left: 22px;
 	}
 
 	footer{
-		font-size: 1em;
+		font-size: 2em !important;
 	}
 
 	.content_container{
-		top:50%;
+		top:48%;
 	}
 
 	.quotes{
 		margin-top: 10%;
-    font-size: 2.5em;
+		font-size: 2.5em;
+		margin: 0 !important;
+		width: 100%;
+	}
+
+	.quotes>blockquote{
+		margin: 0 !important;
+	}
+	.quotes>blockquote>p{
+		font-size: 0.9em;
 	}
 
 	footer>p{
-		margin-bottom: 15%;
+		margin-bottom: 13%;
+		font-size: 0.35em;
 	}
 }
 @media only screen and (device-width:768px){
