@@ -75,7 +75,7 @@ position: fixed;
 }
 
 #background{
-	background-image: url('grass3.png');
+	background-image: url('../grass3.png');
 }
 
 
