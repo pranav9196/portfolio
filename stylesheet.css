@@ -84,7 +84,7 @@ section{
 
 
 .landing{
-    padding: 7% 10% 0 10%;
+    padding: 7% 10% 10% 10%;
 }
 
 .card>*{
@@ -135,10 +135,10 @@ section{
 
 .card_content>p{
     font-size: 10px;
-    letter-spacing: 2;
+    letter-spacing: 2px;
     font-weight: 400;
     color: #a5a5a5;
-    -webkit-text-stroke: 0.4px #a5a5a5;
+    -webkit-text-stroke: 0.2px #a5a5a5;
     line-height: 15px;
 }
 
@@ -225,7 +225,7 @@ section{
     display: inline-block;
     position: relative;
     list-style-type: none;
-    top: -20px;
+    top: 2px;
     line-height: 1.5;
     text-align: right;
 }
@@ -241,7 +241,7 @@ section{
 .bars{
     display: inline-block;
     position: relative;
-    top: -6px;
+    top: 16px;
 }
 
 .bars .small_bar{
@@ -259,7 +259,7 @@ section{
     display: inline-block;
     height: inherit;
     position: relative;
-    /* top: 20px; */
+    top: -25px;
     margin-left: 10px;
 }
 
@@ -270,7 +270,7 @@ section{
 
 
 .resume_button{
-    width: 150px;
+    width: 175px;
     letter-spacing: 4px;
     text-transform: uppercase;
     font-weight: 400;
@@ -279,14 +279,14 @@ section{
     text-align: center;
     background: #272727;
     font-family: 'Orbitron';
-    padding: 8px 12px;
+    padding: 10px 15px;
     margin-top: 35px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.60);
 }
 
 .resume_button:hover{
     cursor: pointer;
-    position: relative;    
+    position: relative;
     /*transition: all 0.1s ease;*/
     box-shadow: 4px 4px 10px rgba(0,0,0,0.60);
     top:-1px;
@@ -307,6 +307,14 @@ section{
 
 
 /*portfolio css*/
+
+.more>a{
+    color: #727272;
+}
+
+.more>a:hover{
+    color:#e4e4e4;
+}
 
 .port_card_container{
     overflow-y: auto;
@@ -329,7 +337,7 @@ section{
 }
 
 .port_links>li>a:hover{
-    color: #333;     
+    color: #e4e4e4;
 }
 
 .portfolio{
@@ -338,19 +346,21 @@ section{
 }
 
 .portfolio_container{
-    background: #f9f9f9;    
-    padding: 3% 5%;
+    background: #333;
+    padding: 5%;
 }
 
 .heading{
     text-align: center;
+    color: #727272;
 }
 
 .heading>.heading_big {
-    font-size: 2em;
+    font-size: 1.6em;
     letter-spacing: 10px;
     text-transform: uppercase;
     margin: 0 0 10;
+    -webkit-text-stroke: 0.7px #727272;
 }
 
 .more{
@@ -361,6 +371,84 @@ section{
 
 /*portfolio css*/
 
+
+/*about me css*/
+
+.about{
+    padding: 6% 0;
+}
+
+.connect{
+    margin-left: 7.5%;
+}
+.about_me{
+    text-align: right;
+    margin-right: 7.5%;
+}
+h2{
+    text-transform: uppercase;    
+    font-weight: 400;
+    letter-spacing: 10px;
+    -webkit-text-stroke: 1px #333;
+}
+
+.icon_container>p{
+    text-align: center;
+}
+
+.icon_circular{
+    margin: 0 auto;
+    border-radius: 100px;
+    height: 140px;
+    width: 140px;
+    border: 4px solid #333;
+}
+
+.icon_circular>img{
+   position: absolute;
+   top: 38%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.icon_row{
+    margin-top: 5%; 
+}
+
+.typed-cursor{
+    display: none;
+}
+
+/*about me css*/
+
+/*contact css*/
+
+.contact{
+    background: #333 no-repeat center;
+    color:#727272;
+    padding: 3%;
+    color: #a2a2a2;
+    background-image: url("../portfolio/images/map.png");
+    background-position: top 200px center;
+}
+
+.contact>div>.heading>h2{
+    -webkit-text-stroke: 1px #727272;
+    letter-spacing: 12px;
+
+}
+
+.icon_container>i:hover{
+    color: #727272;
+    cursor: pointer;
+}
+/*contact css*/
+
+
+footer{
+    padding: 1%;
+    text-align: center;
+}
 
 
 
@@ -399,7 +487,7 @@ section{
 
 .left_nav{
     height: 100vh;
-    left: -10px;
+    left: -5px;
 }
 
 .left_nav .nav_upper:hover, .left_nav .nav_lower:hover{
@@ -414,22 +502,34 @@ section{
 }
 
 .nav_upper>img{
- -webkit-transform: rotateZ(90deg); /* Safari */
- transform: rotateZ(90deg); /* Standard syntax */
- margin-right:25px;
+   -webkit-transform: rotateZ(90deg); /* Safari */
+   transform: rotateZ(90deg); /* Standard syntax */
+   margin-right:25px;
 }
 
 .nav_lower>img{
- -webkit-transform: rotateZ(180deg); /* Safari */
- transform: rotateZ(270deg); /* Standard syntax */
- margin-left:25px;
+   -webkit-transform: rotateZ(180deg); /* Safari */
+   transform: rotateZ(270deg); /* Standard syntax */
+   margin-left:25px;
 }
 
 .left_nav .nav_lower{
-    bottom: 35px;
+    bottom: 50px;
     -webkit-transform: rotateZ(90deg); /* Safari */
     transform: rotateZ(90deg); /* Standard syntax */
     
+}
+
+.arrow_fix1{
+    position: absolute;
+    top:-7px;
+    left: -30px;
+}
+
+.arrow_fix2{
+    position: absolute;
+    top:-7px;
+    left: 45px;
 }
 
 /*navigation css*/
@@ -463,19 +563,16 @@ section{
 
 
 /*hover roxy*/
-figure.effect-roxy {
-    background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
-    background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
-}
-
 figure.effect-roxy img {
     max-width: none;
     width: -webkit-calc(100% + 60px);
     width: calc(100% + 60px);
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(-50px,0,0);
-    transform: translate3d(-50px,0,0);
+    -webkit-transform: translate3d(0px,0,0);
+    transform: translate3d(0px,0,0);
+    /*grayscale*/
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
 }
 
 figure.effect-roxy figcaption::before {
@@ -484,7 +581,7 @@ figure.effect-roxy figcaption::before {
     right: 100px;
     bottom: 100px;
     left: 30px;
-    border: 1px solid #fff;
+    /*-webkit-text-stroke: 1px #333;    */
     content: '';
     opacity: 0;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -495,15 +592,18 @@ figure.effect-roxy figcaption::before {
 
 figure.effect-roxy figcaption {
     padding: 3em;
-    text-align: left;
+    /*-webkit-text-stroke: 1px #333;*/
+    text-align: center;
 }
 
 figure.effect-roxy h4 {
-    /* padding: 30% 0 10px 0; */
+   padding: 15%; 
+   background: rgba(255,255,255,0.5);
 }
 
 figure.effect-roxy p {
     opacity: 0;
+    background: #fff;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
     -webkit-transform: translate3d(-10px,0,0);
@@ -511,14 +611,19 @@ figure.effect-roxy p {
 }
 
 figure.effect-roxy:hover img {
-    opacity: 0.7;
+    /*opacity: 0.7;*/
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
+
+    filter: none;
+    -webkit-filter: grayscale(0%);
 }
 
 figure.effect-roxy:hover figcaption::before,
 figure.effect-roxy:hover p {
     opacity: 1;
+    /*-webkit-text-stroke: 1px #333;*/
+
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
@@ -530,6 +635,7 @@ figure.effect-roxy:hover p {
     max-width: 1000px;
     list-style: none;
     text-align: center;
+    color: #333;
 }
 
 /* Common style */
@@ -542,11 +648,10 @@ figure.effect-roxy:hover p {
     max-width: 300px;
     max-height: 180px;
     width: 48%;
-    background: #3085a3;
     text-align: center;
     cursor: pointer;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-      border-radius: 2px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 2px;
 }
 
 .grid figure img {
@@ -559,8 +664,9 @@ figure.effect-roxy:hover p {
 
 .grid figure figcaption {
     padding: 2em;
-    color: #fff;
+    color: #333;
     text-transform: uppercase;
+
     font-size: 1.25em;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -652,7 +758,7 @@ figure.effect-roxy:hover p {
 /**
  * Material Modal CSS
  */
-.modal {
+ .modal {
     will-change: visibility, opacity;
     display: flex;
     align-items: center;
@@ -746,8 +852,8 @@ figure.effect-roxy:hover p {
 /**
  * Demo specific CSS
  */
-    
-.demo-btns header {
+
+ .demo-btns header {
     padding: 7vh 10vw;
     background: #ffebee;
     display: flex;
