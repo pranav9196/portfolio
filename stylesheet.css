@@ -109,10 +109,11 @@ section{
 
 .transparent_image{
     background-image: url(images/pranav_dp.png);
+    background-attachment: fixed;
     height: 100%;
     position: absolute;
     width: 100%;
-    top: -100;
+    top: 40;
     left: -150;
     z-index: 9;
     filter: blur(1.5px);
@@ -505,6 +506,7 @@ footer{
 
 .right_nav>a>span{
     position: relative;
+    opacity: 0;
 }
 
 

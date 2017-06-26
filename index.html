@@ -2,7 +2,10 @@
 <head>
 	<title>portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
 	<!-- fonts -->	
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+
 	<!-- Orbitron -->
 	<link href="https://fonts.googleapis.com/css?family=Orbitron:600,700,800" rel="stylesheet">
 	<!-- stylesheets -->
@@ -277,59 +280,4 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
-
-<!-- smooth scroll -->
-<script>
-	$('nav a').on('click', function() {
-
-		var scrollAnchor = $(this).attr('data-scroll'),
-		scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top + 5;
-
-		$('body,html').animate({
-			scrollTop: scrollPoint
-		}, 500);
-
-		return false;
-
-	})
-
-
-	// $(window).scroll(function() {
-	// 	var windscroll = $(window).scrollTop();
-	// 	if (windscroll >= 100) {
-	// 		// $('nav').addClass('color');
-	// 		$('section').each(function(i) {
-	// 			if ( $(this).position().top <= windscroll){
-	// 				$('nav a.active').removeClass('active');
-	// 				$('nav a').eq(i).addClass('active');
-	// 				$("#").toggleClass('change_me newClass');
-	// 			}
-	// 		});
-
-	// 	} else {
-
-			// $('nav').removeClass('color');
-			// $('nav a.active').removeClass('active');
-			// $('nav a:first').addClass('active');
-		// }
-
-	// }).scroll();
-
-
-
-
-
-
-
-	// changing color of left nav
-	// $(document).on('scroll', function() {
-	// 	if($(this).scrollTop()>=$('contact','port').position().top){			
-	// 			$(".nav").css("color", "white");			
-	// 	}
-	// })
-	
-</script>
-
-
-
 </html>
