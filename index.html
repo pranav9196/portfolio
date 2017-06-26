@@ -5,11 +5,10 @@
 	<!-- fonts -->	
 	<!-- Orbitron -->
 	<link href="https://fonts.googleapis.com/css?family=Orbitron:600,700,800" rel="stylesheet">
-
+	<!-- stylesheets -->
 	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
 	<link href="parallax.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 	<!-- material design lite -->
 
 
@@ -19,22 +18,22 @@
 		<p class="nav_upper"><img class="arrow_fix1" src="images/arr.png">Lorem</p>
 		<p class="nav_lower">Ipsum<img class="arrow_fix2" src="images/arr.png"></p>
 	</div>
-	<div class="nav right_nav">
-		<ul>
-			<li class="fa fa-circle-o"><span id="toggle" class="toggle fa fa-home"></span></li>				
-			<li class="fa fa-circle-o"><span id="toggle1" class="toggle fa fa-briefcase"></span></li>				
-			<li class="fa fa-circle-o"><span id="toggle2" class="toggle fa fa-user"></span></li>				
-			<li class="fa fa-circle-o"><span id="toggle3" class="toggle fa fa-phone"></span></li>				
-		</ul>
+	<div class="nav nav_container">
+		<div class="nav_wrapper">
+			<nav class="right_nav">		
+				<a data-scroll="home" href="#" class="fa fa-circle-o"><span id="toggle" class="toggle0 fa fa-home"></span></a>
+				<a data-scroll="port" href="#" class="fa fa-circle-o"><span id="toggle1" class="toggle0 fa fa-briefcase"></span></a>
+				<a data-scroll="about" href="#" class="fa fa-circle-o"><span id="toggle2" class="toggle0 fa fa-user"></span></a>
+				<a data-scroll="contact" href="#" class="fa fa-circle-o"><span id="toggle3" class="toggle0 fa fa-phone"></span></a>
+			</nav>
+		</div>
 	</div>
+	
 
-
-	<div class="landing">
+	<section id="home" data-anchor="home" class="landing">
 		<div class="card">
 			<div class="black_container">
-				<div class="transparent_image"></div>
-				
-
+				<div class="transparent_image"></div>			
 				<div class="circular">					
 				</div>
 				<p class="small_bar"></p>
@@ -72,10 +71,10 @@
 				</div>
 			</div>			   :
 		</div>
-	</div>
+	</section>
 
 	<!-- portfolio starts -->
-	<div class="portfolio">
+	<section id="port" data-anchor="port" class="portfolio">
 		<div class="portfolio_container">
 			<div class="heading">
 				<p class="heading_big">What I do?</p>
@@ -164,9 +163,9 @@
 			</div>
 			<div class="more"><a href="">See all...</a></div>			
 		</div>
-	</div>
+	</section>
 
-	<div class="container about">
+	<section id="about" data-anchor="about" class="container about">
 		<div class="row">
 			<div class="col-md-6">
 				<div class="about_me">
@@ -223,9 +222,9 @@
 
 
 		</div>
-	</div>
+	</section>
 
-	<section id="background" class="contact">
+	<section id="contact" data-anchor="contact" class="contact">
 		<div class="container-fluid">
 			<div class="heading">
 				<h2>Contact me</h2>
@@ -260,6 +259,7 @@
 	});
 </script>
 <!-- typed.js -->
+<script type="text/javascript" src="../portfolio/main.js"></script>
 <script src="typed.js"></script>	
 <script>
 	$(function(){
@@ -278,13 +278,58 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
 
-<!-- trying to smoothscroll -->
-<script type="text/javascript">
+<!-- smooth scroll -->
+<script>
+	$('nav a').on('click', function() {
 
-	$("#button").click(function() {
-		$('html, body').animate({
-			scrollTop: $("#myDiv").offset().top
-		}, 2000);
-	});
+		var scrollAnchor = $(this).attr('data-scroll'),
+		scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top + 5;
+
+		$('body,html').animate({
+			scrollTop: scrollPoint
+		}, 500);
+
+		return false;
+
+	})
+
+
+	// $(window).scroll(function() {
+	// 	var windscroll = $(window).scrollTop();
+	// 	if (windscroll >= 100) {
+	// 		// $('nav').addClass('color');
+	// 		$('section').each(function(i) {
+	// 			if ( $(this).position().top <= windscroll){
+	// 				$('nav a.active').removeClass('active');
+	// 				$('nav a').eq(i).addClass('active');
+	// 				$("#").toggleClass('change_me newClass');
+	// 			}
+	// 		});
+
+	// 	} else {
+
+			// $('nav').removeClass('color');
+			// $('nav a.active').removeClass('active');
+			// $('nav a:first').addClass('active');
+		// }
+
+	// }).scroll();
+
+
+
+
+
+
+
+	// changing color of left nav
+	// $(document).on('scroll', function() {
+	// 	if($(this).scrollTop()>=$('contact','port').position().top){			
+	// 			$(".nav").css("color", "white");			
+	// 	}
+	// })
+	
 </script>
+
+
+
 </html>
